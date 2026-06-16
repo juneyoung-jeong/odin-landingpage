@@ -1,0 +1,199 @@
+:root {
+    --hero1: #F9FAF8;
+    --hero2: #E5E7EB;
+    --bkgd: #1F2937;
+    --buttoncolor: #3882F6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+/* header and footer */
+.block-hero,
+.header,
+.footer {
+    background-color: var(--bkgd);
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.footer {
+    color: var(--hero2);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo {
+    color: var(--hero1);
+    font-size: 24px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    display: flex;
+}
+
+li {
+    text-decoration: none;
+    color: var(--hero2);
+    font-size: 18px;
+}
+
+
+/* block-hero section */
+.block-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.herotext {
+    max-width: 500px;
+}
+
+.heroheading {
+    color: var(--hero1);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.herotext .text {
+    color: var(--hero2);
+    margin-bottom: 10px;
+}
+
+.heroimage {
+    padding: 60px;
+    background-color: var(--hero2);
+    color: var(--hero1);
+    /* border: 0; */
+}
+
+/* full site structure */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: space-between; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* block one */
+.block-one {
+    margin: 50px auto;
+}
+
+.one-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--bkgd);
+    margin-bottom: 30px;
+}
+
+.infobox {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--buttoncolor);
+    border-radius: 20px;
+}
+
+.caption {
+    text-align: center;
+}
+
+/* block two */
+.block-two {
+    background-color: var(--hero2);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--bkgd);
+}
+
+.quoted {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* block three */
+.block-three {
+    margin: 30px auto;
+    background-color: var(--buttoncolor);
+    padding: 30px;
+    color: var(--hero1);
+    display: flex;
+    flex-direction: space-around;
+    gap: 30px;
+    border-radius: 8px;
+}
+
+.actionhead {
+    font-weight: 700;
+}
+
+.actiontext {
+    color: var(--hero1);
+    font-size: 12px;
+}
+
+
+/* buttons */
+button {
+    padding: 5px 16px;
+    background-color: var(--buttoncolor);
+    color: var(--hero1);
+    align-self: flex-start;
+    border: none;
+    border-radius: 5px;
+}
+
+#actionbutton {
+    border: 1px solid var(--hero1);
+}
